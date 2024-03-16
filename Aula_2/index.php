@@ -1,52 +1,26 @@
-<?php
-include('conexao.php');
-
-if (isset($_POST['email']) || isset($_POST['pass']))
-{
-    if( isset($_POST['email']) == 0)
-    {
-        echo 'Preencha seu e-mail';
-    }
-    if( isset($_POST['pass']) == 0)
-    {
-        echo 'Preencha sua senha';
-    }
-    else
-    {
-        $email = $_POST['email'];
-        $pass = $_POST['past'];
-
-        $sql_codigo = 'SELECT * FROM dados WHERE email = $email AND senha = $pass';
-
-        $sql_query = $mysqli ->query($sql_codigo) or die('Falha de execução:'.$mysqli->error);
-        echo $sql_query;
-    }
-}
-?>
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aula 2 - Login com DB</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 </head>
-<body>
+<body class="bg-info d-flex justify-content-center align-items-center vh-100">
     <div>
         <h1>
             Acesse sua conta
         </h1>
-        <form action="" method="post">
+        <form class="form-control" action="resultado.php" method="post">
             <div>
-                <label>Email</label>
-                <input type="Email" name="email" required>
+                <label class="form-label">Email</label>
+                <input class="form-control" type="Email" name="email" required>
             </div>
             <div>
-                <label>Senha</label>
-                <input type="password" name="pass"required>
+                <label class="form-label" >Senha</label>
+                <input class="form-control" type="password" name="pass"required>
             </div>
-            <button type="submit">Entrar</button>
+            <button class=" mt-3 w-100 btn btn-outline-primary" type="submit">Entrar</button>
             </form>
     </div>
 </body>
