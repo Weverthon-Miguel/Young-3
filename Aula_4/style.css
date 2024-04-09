@@ -1,0 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Borel&family=Poppins&family=Tangerine&display=swap');
+    * {
+        border: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Poppins', sans-serif;
+}
+
+.body {
+    background-color: black;
+}
