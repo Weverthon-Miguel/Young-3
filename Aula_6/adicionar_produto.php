@@ -16,7 +16,7 @@ if ($_SERVER['REQUEST_METHOD'] = 'POST')
    if ($mysqli -> query($sql) == TRUE)
    {
        //REDIRECIONAR PARA A PÁGINA CORRETA(MOSTRAR AS INFORMAÇÕES)
-       header('Location: listar_ptodutos.php');
+       header('Location: lista_produtos.php');
        exit();
    }
    else
