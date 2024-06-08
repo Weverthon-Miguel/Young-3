@@ -19,7 +19,7 @@
             <label id="lmodulo" for="">Módulo</label>
             <input type="text" name="modulo" id="modulo">
         </div>
-        <div >
+        <div class="btns" >
             <button type="submit"  id="bconfirmar">Confirmar</button>
             <button type="reset" id="blimpar">Limpar</button>
         </div>

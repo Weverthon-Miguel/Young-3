@@ -21,7 +21,7 @@ if ($_SERVER['REQUEST_METHOD'] = 'POST')
    }
    else
    {
-        echo "Deu ruim, só uma farsa;-;". $mysqli-> error;
+        echo "Deu ruim, sou uma farsa;-;". $mysqli-> error;
    }
 }
 
