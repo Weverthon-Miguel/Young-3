@@ -8,6 +8,20 @@
     <script src="Script.js" defer></script>
 </head>
 <body>
+    <aside class="Legenda">
+        <p>Tópico de Modulos</p>
+        <li>Scratch</li>
+        <li>MagicaVoxel</li>
+        <li>Unity</li>
+        <li>Arduino</li>
+        <li>Construct3</li>
+        <li>Python</li>
+        <li>PHP</li>
+        <li>HTML</li>
+        <li>Microbit</li>
+        <li>Piskel</li>
+    </aside>
+
     <section class="painel">
         <h1>Confira os Módulos</h1>
         <form action=""></form>
