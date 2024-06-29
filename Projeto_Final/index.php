@@ -8,30 +8,28 @@
     <script src="Script.js" defer></script>
 </head>
 <body>
-    <aside class="Legenda">
-        <p>Tópico de Modulos</p>
-        <li>Scratch</li>
-        <li>MagicaVoxel</li>
-        <li>Unity</li>
-        <li>Arduino</li>
-        <li>Construct3</li>
-        <li>Python</li>
-        <li>PHP</li>
-        <li>HTML</li>
-        <li>Microbit</li>
-        <li>Piskel</li>
-    </aside>
-
+    
     <section class="painel">
         <h1>Confira os Módulos</h1>
         <form action=""></form>
         <div class="user">
             <label id="lnome" for="">Nome</label>
-            <input type="text" name="nome" id="nome">
+            <input type="text" name="nome" id="nome" placeholder="  Usuário">
         </div>
         <div class="modulo">
             <label id="lmodulo" for="">Módulo</label>
-            <input type="text" name="modulo" id="modulo">
+            <select name="escolha" id="es">
+              <option value="scratch">Scratch</option>
+              <option value="magicavoxel">MagicaVoxel</option>
+              <option value="unity">Unity</option>
+              <option value="arduino">Arduino</option>
+              <option value="construct">Construct3</option>
+              <option value="python">Python</option>
+              <option value="php">PHP</option>
+              <option value="microbit">Microbit</option>
+              <option value="piskel">Piskel</option>
+              <option value="html">HTML</option>
+            </select>
         </div>
         <div class="btns" >
             <button type="submit"  id="bconfirmar">Confirmar</button>

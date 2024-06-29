@@ -36,6 +36,13 @@ h1{
     padding-top: 10px;
 }
 
+select {
+    border-radius: 20px;
+    height: 30px;
+    width: 200px;
+    font-size: 15px;
+}
+
 #modulo{
     border-radius: 20px;
     height: 30px;
