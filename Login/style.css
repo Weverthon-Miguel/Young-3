@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Borel&family=Poppins&family=Tangerine&display=swap');
+    * {
+        border: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Poppins', sans-serif;
+    }
+
+body {
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    background-image: linear-gradient(to right,rgb(0, 191, 255), blue);
+    justify-content: center;
+    align-items: center;
+}
+
+section {
+    background-color: rgba(66, 77, 133, 0.408);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 50px;
+    height: 300px;
+    width: 400px;
+    box-shadow: 3px 3px 6px black;
+}
+
+h1{
+    color: aliceblue;
+    font-size: 30px;
+}
+
+#nomelg{
+    font-size: 30px;
+}
+
+#senhalg{
+    font-size: 30px;
+}
+
+#nome {
+    border-radius: 20px;
+    height: 30px;
+    width: 200px;
+    justify-content: space-between;
+    font-size: 15px;
+}
+
+#senha {
+    border-radius: 20px;
+    height: 30px;
+    width: 200px;
+    justify-content: space-between;
+    font-size: 15px;
+}
+
+.btnlg {
+    padding-top: 20px;
+    display: flex;
+    width: 75%;
+    gap: 20px;
+}
+
+.btnslg button{
+    width: 100%;
+    border-radius: 20px;
+    padding: 5px;
+}
