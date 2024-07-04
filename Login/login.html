@@ -7,22 +7,22 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body class="lg">
-    <section class="seclg">
+    <form action="verificar.php" method="post" class="seclg">
         <div>
             <h1>LOGIN</h1>
         </div>
         <div class="user">
             <label id="nomelg" class="nomelg" type="text" for="">Nome</label>
-            <input type="text"  id="nome" class="nome" placeholder="Usuário">
+            <input type="text"  name="user" id="nome" class="nome" placeholder="  Usuário">
         </div>
         <div class="pass">
             <label id="senhalg" type="password" for="">Senha</label>
-            <input type="text"  id="senha" class="senha" placeholder="password">
+            <input type="text"  name="password"   id="senha" class="senha" placeholder="  Password">
         </div>
         <div class="btnlg">
             <button class="btnlog" type="submit">Entrar</button>
             <button class="btndlog" type="reset">Limpar</button>
         </div>
-    </section>
+    </form>
 </body>
 </html>

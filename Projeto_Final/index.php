@@ -1,3 +1,15 @@
+<?php
+include('../Login/connection.php');
+
+session_start();
+$id_usuario = $_SESSION['id_user'];
+$sql = "SELECT * FROM modulos WHERE id_usuario = '$id_usuario'";
+$resultado = $mysqli->query($sql);
+$dados = $resultado->fetch_assoc();
+
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -14,7 +26,7 @@
         <form action=""></form>
         <div class="user">
             <label id="lnome" for="">Nome</label>
-            <input type="text" name="nome" id="nome" placeholder="  Usuário">
+            <input readonly type="text" name="nome" id="nome" placeholder="  Usuário">
         </div>
         <div class="modulo">
             <label id="lmodulo" for="">Módulo</label>

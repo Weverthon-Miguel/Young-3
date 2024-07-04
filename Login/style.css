@@ -10,13 +10,13 @@ body {
     display: flex;
     height: 100vh;
     width: 100vw;
-    background-image: linear-gradient(to right,rgb(0, 191, 255), blue);
+    background-image: linear-gradient(to right, red, orangered);
     justify-content: center;
     align-items: center;
 }
 
-section {
-    background-color: rgba(66, 77, 133, 0.408);
+ .seclg {
+    background-color: rgba(249, 250, 255, 0.856);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -28,7 +28,7 @@ section {
 }
 
 h1{
-    color: aliceblue;
+    color: rgb(0, 0, 0);
     font-size: 30px;
 }
 
@@ -63,8 +63,10 @@ h1{
     gap: 20px;
 }
 
-.btnslg button{
+.btnlg button{
     width: 100%;
     border-radius: 20px;
     padding: 5px;
+    background-image:linear-gradient(to right, orange, orangered); 
+    color: aliceblue;
 }
