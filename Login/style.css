@@ -70,3 +70,7 @@ h1{
     background-image:linear-gradient(to right, orange, orangered); 
     color: aliceblue;
 }
+
+input::placeholder {
+    text-align: center;
+}

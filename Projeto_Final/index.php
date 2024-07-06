@@ -6,7 +6,6 @@ $id_usuario = $_SESSION['id_user'];
 $sql = "SELECT * FROM modulos WHERE id_usuario = '$id_usuario'";
 $resultado = $mysqli->query($sql);
 $dados = $resultado->fetch_assoc();
-
 ?>
 
 
@@ -23,29 +22,24 @@ $dados = $resultado->fetch_assoc();
     
     <section class="painel">
         <h1>Confira os Módulos</h1>
-        <form action=""></form>
+        <form action="logout.php"></form>
         <div class="user">
             <label id="lnome" for="">Nome</label>
-            <input readonly type="text" name="nome" id="nome" placeholder="  Usuário">
+            <input readonly type="text" name="nome" id="nome" placeholder="<?php echo $dados['nome']?>">
         </div>
         <div class="modulo">
             <label id="lmodulo" for="">Módulo</label>
             <select name="escolha" id="es">
-              <option value="scratch">Scratch</option>
-              <option value="magicavoxel">MagicaVoxel</option>
-              <option value="unity">Unity</option>
-              <option value="arduino">Arduino</option>
-              <option value="construct">Construct3</option>
-              <option value="python">Python</option>
-              <option value="php">PHP</option>
-              <option value="microbit">Microbit</option>
-              <option value="piskel">Piskel</option>
-              <option value="html">HTML</option>
+                <?php               
+                    echo '<option value="'.$dados['m1'].'">'.$dados['m1'].'</option>';
+                    echo '<option value="'.$dados['m2'].'">'.$dados['m2'].'</option>';
+                    echo '<option value="'.$dados['m3'].'">'.$dados['m3'].'</option>';
+                ?>
             </select>
         </div>
         <div class="btns" >
             <button type="submit"  id="bconfirmar">Confirmar</button>
-            <button type="reset" id="blimpar">Limpar</button>
+            <button type="submit" id="blimpar" href="logout.php">Sair</button>     
         </div>
     </section>
 </body>

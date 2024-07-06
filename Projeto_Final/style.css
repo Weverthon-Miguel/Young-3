@@ -56,7 +56,10 @@ select {
     width: 200px;
     justify-content: space-between;
     font-size: 15px;
+}
 
+input::placeholder {
+    text-align: center;
 }
 
 
