@@ -5,6 +5,6 @@ if(!isset($_SESSION))
     session_start();
 }
 session_destroy();
-header('Location: index.php?deslogado')
+header('Location: ../Login/login.html?deslogado')
 
 ?>

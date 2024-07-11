@@ -20,9 +20,8 @@ $dados = $resultado->fetch_assoc();
 </head>
 <body>
     
-    <section class="painel">
+    <form action="modulo.php" method="post" class="painel">
         <h1>Confira os Módulos</h1>
-        <form action="logout.php"></form>
         <div class="user">
             <label id="lnome" for="">Nome</label>
             <input readonly type="text" name="nome" id="nome" placeholder="<?php echo $dados['nome']?>">
@@ -39,8 +38,8 @@ $dados = $resultado->fetch_assoc();
         </div>
         <div class="btns" >
             <button type="submit"  id="bconfirmar">Confirmar</button>
-            <button type="submit" id="blimpar" href="logout.php">Sair</button>     
+            <a class="button" href="logout.php">Sair</a>   
         </div>
-    </section>
+    </form>
 </body>
 </html>

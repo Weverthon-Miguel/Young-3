@@ -93,3 +93,12 @@ input::placeholder {
 
 }
 
+.button {
+    width: 100%;
+    border-radius: 20px;
+    padding: 5px;
+    background-image: linear-gradient(to right,rgb(146, 228, 255), rgb(105, 105, 250)); 
+    color: aliceblue;
+    text-align:  center;
+}
+
